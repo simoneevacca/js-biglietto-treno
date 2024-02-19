@@ -19,6 +19,7 @@
 
 - variables
 - prompt
+- alert
 
 
 
