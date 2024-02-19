@@ -20,6 +20,7 @@
 - variables
 - prompt
 - alert
+- .toFixed()
 
 
 
