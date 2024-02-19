@@ -11,19 +11,19 @@ let ticketPrice = kilometres * 0.21;
 if (agePassenger < 18) {
     ticketPrice = ticketPrice - (((kilometres * 0.21) * 20) / 100);
     console.log("biglietto scontato minorenne: " + ticketPrice);
-    alert ("Biglietto scontato minorenne: " + ticketPrice + "€");
+    alert ("Biglietto scontato minorenne: " + ticketPrice.toFixed(2) + "€");
 }
 
 //- Apply the 40% discount for the over 65
 else if (agePassenger > 65) {
     ticketPrice = ticketPrice - (((kilometres * 0.21) * 40) / 100);
     console.log("biglietto scontato pensionato: " + ticketPrice);
-    alert ("Biglietto scontato pensionato: " + ticketPrice + "€");
+    alert ("Biglietto scontato pensionato: " + ticketPrice.toFixed(2) + "€");
 }
 
 else {
 console.log("biglietto intero: " + ticketPrice);
-alert ("Biglietto intero: " + ticketPrice + "€");
+alert ("Biglietto intero: " + ticketPrice.toFixed(2) + "€");
 }
 
 
