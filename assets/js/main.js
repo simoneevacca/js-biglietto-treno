@@ -6,7 +6,6 @@ console.log(kilometres,agePassenger);
 
 //- Multiply kilometres number by the price (0.21)
 let ticketPrice = kilometres * 0.21;
-console.log("biglietto intero: " + ticketPrice);
 
 //- Apply the 20% discount for the under 18
 if (agePassenger < 18) {
@@ -15,9 +14,14 @@ if (agePassenger < 18) {
 }
 
 //- Apply the 40% discount for the over 65
-if (agePassenger > 18) {
+else if (agePassenger > 65) {
     ticketPrice = ticketPrice - (((kilometres * 0.21) * 40) / 100);
     console.log("biglietto scontato pensionato: " + ticketPrice);
+}
+
+else {
+console.log("biglietto intero: " + ticketPrice);
+
 }
 
 
